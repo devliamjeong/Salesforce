@@ -1,0 +1,25 @@
+<template>
+    
+    <div>
+        
+        
+        <p class="slds-float_left">
+            Developed by <strong>Liam (Seonghwa) Jeong</strong>. <lightning-icon icon-name="utility:connected_apps" alternative-text="Lightning" title="Lightning"></lightning-icon><strong>Lightning Web Component</strong>
+        </p>
+        <p class="slds-float_right">
+            <lightning-icon icon-name="utility:clock" alternative-text="Clock" title="Clock"></lightning-icon>
+            <lightning-formatted-date-time
+            value={curDateTime} 
+            year="numeric" 
+            month="numeric" 
+            day="numeric" 
+            hour="2-digit"
+            minute="2-digit" 
+            second="2-digit"
+            time-zone-name="short" 
+            hour12="true">
+        </lightning-formatted-date-time></p>
+
+    </div>
+
+</template>
